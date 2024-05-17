@@ -4,7 +4,9 @@ import { useEffect, useState } from "react";
 //import { CategoriasCreate } from '../../../components/Categorias/CategoriasCreate';
 //import { CategoriasUpdate } from '../../../components/Categorias/CategoriasUpdate';
 //import { MetasCreate } from '../../../components/Metas/MetasCreate';
-import { MetasUpdate } from '../../../components/Metas/MetasUpdate';
+//import { MetasUpdate } from '../../../components/Metas/MetasUpdate';
+//import { TransacoesCreate } from '../../../components/Transacoes/TransacoesCreate';
+import { TransacoesUpdate } from '../../../components/Transacoes/TransacoesUpdate';
 
 export const DashboardPage = () => {
     const [ user, setUser ] = useState({
@@ -30,10 +32,12 @@ export const DashboardPage = () => {
     return(
         <div>
             <h1>Dashboard</h1>
-            {/*<CategoriasUpdate categoriaId={4}/>*/}
-            {/*<CategoriasCreate/>*/}
+            {/*<CategoriasUpdate categoriaId={8}/>*/}
+            {/*<CategoriasCreate/> */}
             {/*<MetasCreate/>*/}
-            <MetasUpdate metaId={3}/>
+            {/*<MetasUpdate metaId={4}/>*/}
+            {/*<TransacoesCreate/>*/}
+            <TransacoesUpdate transacaoId={1} />
         </div>
     );
 }
